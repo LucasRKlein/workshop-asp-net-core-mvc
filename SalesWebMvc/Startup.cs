@@ -33,7 +33,8 @@ namespace SalesWebMvc
                     options.UseSqlServer(Configuration.GetConnectionString("SalesWebMvcContext")));
 
             services.AddScoped<SeedingService>();
-            services.AddScoped<SellerService>();    
+            services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentService>();
 
         }
 
